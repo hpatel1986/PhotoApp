@@ -2,16 +2,27 @@
 //  FullImageViewController.swift
 //  Photo Map
 //
-//  Created by Nicholas Aiwazian on 10/15/15.
+//  
 //  Copyright © 2015 Timothy Lee. All rights reserved.
 //
 
 import UIKit
+import MapKit
+import CoreLocation
+import AddressBookUI
+import MessageUI
 
 class FullImageViewController: UIViewController {
+    
+    @IBOutlet weak var fullImage: UIImageView!
+    
+    var photo: UIImage!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fullImage.image = photo
 
         // Do any additional setup after loading the view.
     }
